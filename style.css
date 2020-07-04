@@ -1,0 +1,14 @@
+header {
+  font-size: 25px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  height: 45px;
+}
+
+.characters {
+  display: flexbox;
+}
+
+.rickclick {
+}
