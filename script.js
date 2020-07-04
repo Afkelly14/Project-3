@@ -3,6 +3,7 @@ url = "https://rickandmortyapi.com/api/character/";
 
 rickIMG = document.querySelector(".rick");
 mortyIMG = document.querySelector(".morty");
+popUp = document.querySelector(".information");
 
 allcharacters = document.querySelectorAll(".characters");
 let ul = document.querySelector("ul");
@@ -16,7 +17,7 @@ fetch(url)
       img[i].src = res.results[i].image;
       img[i].addEventListener("click", showInfo);
       function showInfo() {
-        console.log("information");
+        popUp.style.opacity = 1;
       }
     }
   });
