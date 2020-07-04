@@ -14,5 +14,9 @@ fetch(url)
   .then((res) => {
     for (i = 0; i < res.results.length; i++) {
       img[i].src = res.results[i].image;
+      img[i].addEventListener("click", showInfo);
+      function showInfo() {
+        console.log("information");
+      }
     }
   });
