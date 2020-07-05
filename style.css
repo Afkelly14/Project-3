@@ -6,16 +6,35 @@ header {
   height: 45px;
 }
 
+main {
+  font-family: "Roboto", sans-serif;
+}
+
 .characters {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   column-gap: 2%;
   row-gap: 2%;
+  cursor: pointer;
 }
 
 img {
   height: 200px;
   width: auto;
+}
+
+.close {
+  position: absolute;
+  top: 40%;
+  right: 27%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  opacity: 0;
 }
 
 .information {
@@ -24,11 +43,12 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 4rem;
-  background-color: #111;
-  text-align: center;
+  background-color: darkgreen;
+  text-align: right;
   z-index: 10;
   opacity: 0;
   pointer-events: none;
   transition: all 250ms ease;
   color: white;
+  font-size: 12px;
 }
