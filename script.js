@@ -1,13 +1,9 @@
-/* add event listeners for each picture */
 url = "https://rickandmortyapi.com/api/character/";
 
-rickIMG = document.querySelector(".rick");
-mortyIMG = document.querySelector(".morty");
 popUp = document.querySelector(".information");
 
 allcharacters = document.querySelectorAll(".characters");
-let ul = document.querySelector("ul");
-let li = document.querySelectorAll("li");
+
 let img = document.querySelectorAll("img");
 
 fetch(url)
@@ -15,8 +11,25 @@ fetch(url)
   .then((res) => {
     for (i = 0; i < res.results.length; i++) {
       img[i].src = res.results[i].image;
-      img[i].addEventListener("click", showInfo);
-      function showInfo() {
+      let name = res.results[i].name;
+
+      let status = res.results[i].status;
+
+      let species = res.results[i].species;
+
+      let type = res.results[i].type;
+
+      let gender = res.results[i].gender;
+
+      let location = res.results[i].location.name;
+
+      img[i].addEventListener("click", openPopUp);
+
+      function openPopUp(e) {
+        e.preventDefault();
+        popUp.innerText = `Name : ${name} | Status : ${status} | Species : ${species} | Type : ${type} | Gender : ${gender} | Location : ${location} | Image :
+        ${img[i]}`;
+
         popUp.style.opacity = 1;
       }
     }

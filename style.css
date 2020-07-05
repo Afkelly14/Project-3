@@ -30,7 +30,5 @@ img {
   opacity: 0;
   pointer-events: none;
   transition: all 250ms ease;
+  color: white;
 }
-
-/* .rickclick {
-} */
