@@ -32,9 +32,9 @@ img {
   justify-content: center;
   align-items: center;
   float: right;
-  font-size: 28px;
   font-weight: bold;
   opacity: 0;
+  z-index: 3;
 }
 
 .information {
@@ -44,11 +44,17 @@ img {
   transform: translate(-50%, -50%);
   padding: 4rem;
   background-color: darkgreen;
-  text-align: right;
-  z-index: 10;
+  text-align: left;
+  z-index: 1;
   opacity: 0;
   pointer-events: none;
   transition: all 250ms ease;
   color: white;
   font-size: 12px;
 }
+
+/* @media only screen and (max-width: 700px) {
+  .close {
+    position: ;
+  }
+} */
