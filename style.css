@@ -53,8 +53,28 @@ img {
   font-size: 12px;
 }
 
-/* @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .close {
-    position: ;
+    position: absolute;
+    top: 22%;
+    right: 27%;
   }
-} */
+
+  img {
+    height: 75px;
+    width: auto;
+  }
+
+  header {
+    font-size: 15px;
+    height: 25px;
+  }
+
+  .information {
+    height: 10px;
+    width: auto;
+    font-size: 8px;
+    top: 30%;
+    padding: 3rem;
+  }
+}
