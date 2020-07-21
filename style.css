@@ -42,10 +42,10 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 4rem;
+  padding: 2rem;
   background-color: darkgreen;
   text-align: left;
-  z-index: 1;
+  z-index: 2;
   opacity: 0;
   pointer-events: none;
   transition: all 250ms ease;
@@ -53,15 +53,41 @@ img {
   font-size: 12px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .close {
     position: absolute;
-    top: 22%;
+    top: 16%;
     right: 27%;
   }
 
   img {
-    height: 75px;
+    height: 120px;
+    width: auto;
+  }
+
+  header {
+    font-size: 15px;
+    height: 35px;
+  }
+
+  .information {
+    height: 55px;
+    /* width: auto; */
+    font-size: 12px;
+    top: 25%;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .close {
+    position: absolute;
+    top: 26%;
+    right: 26%;
+  }
+
+  img {
+    height: 100px;
     width: auto;
   }
 
@@ -71,10 +97,36 @@ img {
   }
 
   .information {
-    height: 10px;
+    height: 55px;
+    /* width: auto; */
+    font-size: 10px;
+    top: 35%;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .close {
+    position: absolute;
+    top: 13%;
+    right: 27%;
+  }
+
+  img {
+    height: 65px;
     width: auto;
-    font-size: 8px;
-    top: 30%;
+  }
+
+  header {
+    font-size: 15px;
+    height: 25px;
+  }
+
+  .information {
+    height: 25px;
+    width: auto;
+    font-size: 7px;
+    top: 25%;
     padding: 3rem;
   }
 }

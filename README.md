@@ -2,7 +2,8 @@
 
 # UI Pattern Project
 
-# Project Name: 
+# Project Name:
+
 Rick and Morty UI Pattern Project
 
 This is project-3 for General Assembly. This utilizes an API to generate character information in a CSS grid format.
@@ -15,4 +16,5 @@ This is project-3 for General Assembly. This utilizes an API to generate charact
 *General knowledge of HTML, JavaScript, and CSS.
 
 # To use this project, open the link:
- https://afkelly14.github.io/Project-3/ and click on each character to see their respective information.
+
+https://afkelly14.github.io/Project-3/ and click on each character to see their respective information.
