@@ -85,7 +85,7 @@ img {
 @media only screen and (max-width: 700px) {
   .close {
     position: absolute;
-    top: 26%;
+    top: 28%;
     right: 26%;
   }
 
@@ -129,7 +129,7 @@ img {
     height: 25px;
     width: auto;
     font-size: 7px;
-    top: 25%;
+    top: 20%;
     padding: 3rem;
   }
 }
