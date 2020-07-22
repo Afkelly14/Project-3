@@ -37,7 +37,7 @@ img {
   z-index: 3;
   color: white;
   background-color: transparent;
-  
+  border: darkgreen;
 }
 
 .information {
